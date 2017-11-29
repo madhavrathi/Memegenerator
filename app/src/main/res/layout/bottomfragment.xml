@@ -3,10 +3,10 @@
     android:layout_width="match_parent" android:layout_height="match_parent">
 
     <ImageView
+        android:id="@+id/image"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/image"
-        android:layout_centerVertical="true"
+        android:layout_centerVertical="false"
         android:src="@drawable/radix" />
 
     <TextView
@@ -17,7 +17,6 @@
         android:id="@+id/toptextview"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="42dp"
         android:gravity="center_horizontal" />
 
     <TextView
@@ -28,7 +27,6 @@
         android:id="@+id/bottomtextview"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="69dp"
         android:gravity="center_horizontal" />
 
 </RelativeLayout>
