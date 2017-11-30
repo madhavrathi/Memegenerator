@@ -11,17 +11,17 @@
     tools:context="com.example.mdhvr.memegenerator.MainActivity">
 
     <fragment
+        android:id="@+id/fragment"
+        android:name="com.example.mdhvr.memegenerator.topfragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:name="com.example.mdhvr.memegenerator.topfragment"
-        android:id="@+id/fragment"
-        tools:layout="@layout/topfragment"
-        app:layout_constraintRight_toLeftOf="@+id/guideline"
-        android:layout_marginRight="0dp"
         android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
         app:layout_constraintLeft_toLeftOf="@+id/guideline2"
+        app:layout_constraintRight_toLeftOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="0dp" />
+        tools:layout="@layout/topfragment" />
 
     <fragment
         android:id="@+id/fragment2"
@@ -36,20 +36,20 @@
         app:layout_constraintLeft_toLeftOf="@+id/guideline2"
         app:layout_constraintRight_toLeftOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/fragment"
-        tools:layout="@layout/bottomfragment"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout="@layout/bottomfragment" />
 
     <android.support.constraint.Guideline
+        android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/guideline"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.98" />
 
     <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/guideline2"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.02" />
 
